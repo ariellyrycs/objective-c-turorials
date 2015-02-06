@@ -51,4 +51,18 @@
 {
     return [NSString stringWithFormat:@"%ld %@ %@", (long)self.modelYear, self.brandName, self.modelName];
 }
+-(NSString *)vehicleDetailsString
+{
+    //Setup the basic details string based on the properties in the base Vehicle class.
+    NSMutableString *basicDetailsString = [NSMutableString string];
+    [basicDetailsString appendString:@"Basic vehicle details:\n\n"];
+    [basicDetailsString appendFormat:@"Brand name: %@\n", self.brandName];
+    [basicDetailsString appendFormat:@"Model name: %@\n", self.modelName];
+    [basicDetailsString appendFormat:@"Model year: %ld\n", (long)self.modelYear];
+    [basicDetailsString appendFormat:@"Power source: %@\n", self.powerSource];
+    [basicDetailsString appendFormat:@"# of wheels: %ld", (long)self.numberOfWheels];
+    
+    return [basicDetailsString copy];
+}
+
 @end

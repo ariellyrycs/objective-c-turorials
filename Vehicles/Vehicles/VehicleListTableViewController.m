@@ -11,6 +11,8 @@
 #import "VehicleDetailViewController.h"
 #import "Vehicle.h"
 #import "Car.h"
+#import "Motorcycle.h"
+#import "truck.h"
 
 @interface VehicleListTableViewController ()
 @property (nonatomic, strong) NSMutableArray *vehicles;
@@ -93,6 +95,49 @@
     //Sort the array by the model year
     NSSortDescriptor *modelYear = [NSSortDescriptor sortDescriptorWithKey:@"modelYear" ascending:YES];
     [self.vehicles sortUsingDescriptors:@[modelYear]];
+    
+    Motorcycle *harley = [[Motorcycle alloc] init];
+    harley.brandName = @"Harley-Davidson";
+    harley.modelName = @"Softail";
+    harley.modelYear = 1979;
+    harley.engineNoise = @"Vrrrrrrrroooooooooom!";
+    
+    //Add it to the array.
+    [self.vehicles addObject:harley];
+
+    
+    //Create another motorcycle
+    Motorcycle *kawasaki = [[Motorcycle alloc] init];
+    kawasaki.brandName = @"Kawasaki";
+    kawasaki.modelName = @"Ninja";
+    kawasaki.modelYear = 2005;
+    kawasaki.engineNoise = @"Neeeeeeeeeeeeeeeeow!";
+    //Add it to the array
+    [self.vehicles addObject:kawasaki];
+    
+    //Create a truck
+    Truck *silverado = [[Truck alloc] init];
+    silverado.brandName = @"Chevrolet";
+    silverado.modelName = @"Silverado";
+    silverado.modelYear = 2011;
+    silverado.numberOfWheels = 4;
+    silverado.cargoCapacityCubicFeet = 53;
+    silverado.powerSource = @"gas engine";
+    
+    //Add it to the array
+    [self.vehicles addObject:silverado];
+    
+    //Create another truck
+    Truck *eighteenWheeler = [[Truck alloc] init];
+    eighteenWheeler.brandName = @"Peterbilt";
+    eighteenWheeler.modelName = @"579";
+    eighteenWheeler.modelYear = 2013;
+    eighteenWheeler.numberOfWheels = 18;
+    eighteenWheeler.cargoCapacityCubicFeet = 408;
+    eighteenWheeler.powerSource = @"diesel engine";
+    
+    //Add it to the array
+    [self.vehicles addObject:eighteenWheeler];
 }
 
 

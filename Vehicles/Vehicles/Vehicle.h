@@ -23,4 +23,6 @@
 -(NSString *)turn:(NSInteger)degrees;
 -(NSString *)makeNoise;
 -(NSString *)vehicleTitleString;
+//Convenience method to get the vehicle's details.
+-(NSString *)vehicleDetailsString;
 @end
