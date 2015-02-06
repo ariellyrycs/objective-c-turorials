@@ -47,4 +47,8 @@
 {
     return nil;
 }
+-(NSString *)vehicleTitleString
+{
+    return [NSString stringWithFormat:@"%ld %@ %@", (long)self.modelYear, self.brandName, self.modelName];
+}
 @end

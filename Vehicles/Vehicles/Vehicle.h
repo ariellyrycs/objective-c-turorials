@@ -22,4 +22,5 @@
 -(NSString *)changeGears:(NSString *)newGearName;
 -(NSString *)turn:(NSInteger)degrees;
 -(NSString *)makeNoise;
+-(NSString *)vehicleTitleString;
 @end
