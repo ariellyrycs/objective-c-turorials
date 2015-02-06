@@ -14,6 +14,11 @@
 		A66992721A8429BB00A6E969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66992711A8429BB00A6E969 /* Images.xcassets */; };
 		A66992751A8429BB00A6E969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66992731A8429BB00A6E969 /* LaunchScreen.xib */; };
 		A66992811A8429BB00A6E969 /* first_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66992801A8429BB00A6E969 /* first_appTests.m */; };
+		A669928B1A852F7200A6E969 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669928A1A852F7200A6E969 /* AVFoundation.framework */; };
+		A669928E1A85330200A6E969 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669928C1A852FB300A6E969 /* UIKit.framework */; };
+		A66992981A85387A00A6E969 /* ButtonTap.wav in Resources */ = {isa = PBXBuildFile; fileRef = A66992951A85387A00A6E969 /* ButtonTap.wav */; };
+		A66992991A85387A00A6E969 /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A66992961A85387A00A6E969 /* HallOfTheMountainKing.mp3 */; };
+		A669929A1A85387A00A6E969 /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = A66992971A85387A00A6E969 /* SecondBeep.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		A669927A1A8429BB00A6E969 /* first appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "first appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A669927F1A8429BB00A6E969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A66992801A8429BB00A6E969 /* first_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = first_appTests.m; sourceTree = "<group>"; };
+		A669928A1A852F7200A6E969 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A669928C1A852FB300A6E969 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A66992951A85387A00A6E969 /* ButtonTap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ButtonTap.wav; sourceTree = "<group>"; };
+		A66992961A85387A00A6E969 /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
+		A66992971A85387A00A6E969 /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SecondBeep.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A669928E1A85330200A6E969 /* UIKit.framework in Frameworks */,
+				A669928B1A852F7200A6E969 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 		A66992581A8429BB00A6E969 = {
 			isa = PBXGroup;
 			children = (
+				A669928C1A852FB300A6E969 /* UIKit.framework */,
+				A669928A1A852F7200A6E969 /* AVFoundation.framework */,
 				A66992631A8429BB00A6E969 /* first app */,
 				A669927D1A8429BB00A6E969 /* first appTests */,
 				A66992621A8429BB00A6E969 /* Products */,
@@ -96,6 +110,9 @@
 		A66992641A8429BB00A6E969 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A66992951A85387A00A6E969 /* ButtonTap.wav */,
+				A66992961A85387A00A6E969 /* HallOfTheMountainKing.mp3 */,
+				A66992971A85387A00A6E969 /* SecondBeep.wav */,
 				A66992651A8429BB00A6E969 /* Info.plist */,
 				A66992661A8429BB00A6E969 /* main.m */,
 			);
@@ -199,9 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A669929A1A85387A00A6E969 /* SecondBeep.wav in Resources */,
 				A66992701A8429BB00A6E969 /* Main.storyboard in Resources */,
 				A66992751A8429BB00A6E969 /* LaunchScreen.xib in Resources */,
+				A66992981A85387A00A6E969 /* ButtonTap.wav in Resources */,
 				A66992721A8429BB00A6E969 /* Images.xcassets in Resources */,
+				A66992991A85387A00A6E969 /* HallOfTheMountainKing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +432,7 @@
 				A66992861A8429BB00A6E969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A66992871A8429BB00A6E969 /* Build configuration list for PBXNativeTarget "first appTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				A66992891A8429BB00A6E969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
