@@ -57,4 +57,18 @@
     
     return motorcycleDetails;
 }
+
+#pragma mark - Factory Method
++(Motorcycle *)motorcycleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise
+{
+    //Create a new instance of the motorcycle with the basic properties by calling the Factory
+    //method on the superclass.
+    Motorcycle *newMotorcycle = [Motorcycle vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:@"gas engine" wheels:2];
+    
+    //Set the Motorcycle-specific properties.
+    newMotorcycle.engineNoise = engineNoise;
+    
+    return newMotorcycle;
+}
+
 @end

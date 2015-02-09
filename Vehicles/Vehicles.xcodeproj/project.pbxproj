@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A645630D1A857E9B005D0EAA /* Motorcycle.m in Sources */ = {isa = PBXBuildFile; fileRef = A645630C1A857E9B005D0EAA /* Motorcycle.m */; };
 		A64563101A858213005D0EAA /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = A645630F1A858213005D0EAA /* Truck.m */; };
+		A64563131A891560005D0EAA /* UIAlertView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = A64563121A891560005D0EAA /* UIAlertView+Convenience.m */; };
+		A64563161A892F8E005D0EAA /* VehicleList.m in Sources */ = {isa = PBXBuildFile; fileRef = A64563151A892F8E005D0EAA /* VehicleList.m */; };
 		A669929D1A8556D300A6E969 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = A669929C1A8556D300A6E969 /* Car.m */; };
 		F5961A2217DD013A008D39EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2117DD013A008D39EA /* Foundation.framework */; };
 		F5961A2417DD013A008D39EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2317DD013A008D39EA /* CoreGraphics.framework */; };
@@ -43,6 +45,10 @@
 		A645630C1A857E9B005D0EAA /* Motorcycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Motorcycle.m; sourceTree = "<group>"; };
 		A645630E1A858213005D0EAA /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Truck.h; sourceTree = "<group>"; };
 		A645630F1A858213005D0EAA /* Truck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Truck.m; sourceTree = "<group>"; };
+		A64563111A891560005D0EAA /* UIAlertView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Convenience.h"; sourceTree = "<group>"; };
+		A64563121A891560005D0EAA /* UIAlertView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Convenience.m"; sourceTree = "<group>"; };
+		A64563141A892F8E005D0EAA /* VehicleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleList.h; sourceTree = "<group>"; };
+		A64563151A892F8E005D0EAA /* VehicleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleList.m; sourceTree = "<group>"; };
 		A669929B1A8556D300A6E969 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		A669929C1A8556D300A6E969 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		F5961A1E17DD013A008D39EA /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,10 +138,14 @@
 				F5961A3317DD013A008D39EA /* Main.storyboard */,
 				F5961A5917DD04AF008D39EA /* Vehicle.h */,
 				F5961A5A17DD04AF008D39EA /* Vehicle.m */,
+				A64563141A892F8E005D0EAA /* VehicleList.h */,
+				A64563151A892F8E005D0EAA /* VehicleList.m */,
 				F5961A3617DD013A008D39EA /* VehicleListTableViewController.h */,
 				F5961A3717DD013A008D39EA /* VehicleListTableViewController.m */,
 				A645630E1A858213005D0EAA /* Truck.h */,
 				A645630F1A858213005D0EAA /* Truck.m */,
+				A64563111A891560005D0EAA /* UIAlertView+Convenience.h */,
+				A64563121A891560005D0EAA /* UIAlertView+Convenience.m */,
 				F5961A3917DD013A008D39EA /* VehicleDetailViewController.h */,
 				F5961A3A17DD013A008D39EA /* VehicleDetailViewController.m */,
 				F5961A3C17DD013A008D39EA /* Images.xcassets */,
@@ -276,9 +286,11 @@
 			files = (
 				A669929D1A8556D300A6E969 /* Car.m in Sources */,
 				F5961A3217DD013A008D39EA /* AppDelegate.m in Sources */,
+				A64563161A892F8E005D0EAA /* VehicleList.m in Sources */,
 				F5961A3817DD013A008D39EA /* VehicleListTableViewController.m in Sources */,
 				A64563101A858213005D0EAA /* Truck.m in Sources */,
 				F5961A2E17DD013A008D39EA /* main.m in Sources */,
+				A64563131A891560005D0EAA /* UIAlertView+Convenience.m in Sources */,
 				F5961A3B17DD013A008D39EA /* VehicleDetailViewController.m in Sources */,
 				F5961A5B17DD04AF008D39EA /* Vehicle.m in Sources */,
 				A645630D1A857E9B005D0EAA /* Motorcycle.m in Sources */,

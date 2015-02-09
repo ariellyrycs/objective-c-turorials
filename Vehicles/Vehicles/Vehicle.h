@@ -25,4 +25,6 @@
 -(NSString *)vehicleTitleString;
 //Convenience method to get the vehicle's details.
 -(NSString *)vehicleDetailsString;
+
++ (instancetype)vehicleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels;
 @end
